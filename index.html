@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolinhos de Pote Delícia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bolinhos de Pote Delícia</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#encomendas">Encomendas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo à Bolinhos de Pote Delícia!</h2>
+        <p>Deliciosos bolinhos de pote feitos com amor e ingredientes de alta qualidade.</p>
+        <img src="bolinho.jpg" alt="Bolinhos de Pote">
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma empresa dedicada a trazer felicidade em forma de bolinhos. Com receitas exclusivas e ingredientes selecionados, garantimos sabor e qualidade em cada pote.</p>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <ul>
+            <li>Bolo de Chocolate</li>
+            <li>Bolo de Cenoura</li>
+            <li>Bolo de Coco</li>
+            <li>Bolo de Limão</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: contato@bolinhosdelicia.com.br</p>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>WhatsApp: <a href="https://wa.me/551112345678" target="_blank">(11) 1234-5678</a></p>
+    </section>
+
+    <section id="encomendas">
+        <h2>Faça sua Encomenda</h2>
+        <form action="encomenda.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="produto">Produto:</label>
+            <select id="produto" name="produto">
+                <option value="chocolate">Bolo de Chocolate</option>
+                <option value="cenoura">Bolo de Cenoura</option>
+                <option value="coco">Bolo de Coco</option>
+                <option value="limao">Bolo de Limão</option>
+            </select>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bolinhos de Pote Delícia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
